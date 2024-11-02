@@ -1,5 +1,6 @@
 package com.cargor.nsccmod;
 
+import com.cargor.nsccmod.item.ModCreativeModeTabs;
 import com.cargor.nsccmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,15 +23,14 @@ import org.slf4j.Logger;
 @Mod(NsccMod.MOD_ID)
 public class NsccMod
 {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "nsccmod"; // unique identifier for mod, must be lowercase
-    // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public NsccMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        // registers ModItems
+        // registers ModItems and Creative mode tab
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
