@@ -1,5 +1,6 @@
 package com.cargor.nsccmod;
 
+import com.cargor.nsccmod.block.ModBlocks;
 import com.cargor.nsccmod.item.ModCreativeModeTabs;
 import com.cargor.nsccmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -32,6 +33,7 @@ public class NsccMod
         // registers ModItems and Creative mode tab
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in

@@ -1,6 +1,7 @@
 package com.cargor.nsccmod.item;
 
 import com.cargor.nsccmod.NsccMod;
+import com.cargor.nsccmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +19,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.nscc_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.NUGGET.get());
+
+                        // adding the blocks to the creative mode tab
+                        pOutput.accept(ModBlocks.NUGGET_BLOCK.get());
+                        pOutput.accept(ModBlocks.NUGGET_ORE_BLOCK.get());
                     })
                     .build());
 

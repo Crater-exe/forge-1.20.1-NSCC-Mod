@@ -1,5 +1,9 @@
 {
   "item.nsccmod.nugget": "Nugget",
 
+  "block.nsccmod.nugget_block": "Block of Nuggets",
+
+  "block.nsccmod.nugget_ore_block": "Nuggetonium Ore",
+
   "creativetab.nscc_tab": "NSCC Mod Tab"
 }
