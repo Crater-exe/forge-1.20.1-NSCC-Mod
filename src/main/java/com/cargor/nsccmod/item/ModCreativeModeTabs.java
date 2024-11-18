@@ -1,6 +1,7 @@
 package com.cargor.nsccmod.item;
 
 import com.cargor.nsccmod.NsccMod;
+import com.cargor.nsccmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -14,7 +15,7 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, NsccMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> NSCC_TAB = CREATIVE_MODE_TABS.register("nscc_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.NUGGET.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.NUGGET_ITEM.get()))
                     .title(Component.translatable("creativetab.nscc_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.NUGGET_ITEM.get());

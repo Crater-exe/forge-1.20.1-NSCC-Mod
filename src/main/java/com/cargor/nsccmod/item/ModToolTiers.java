@@ -16,7 +16,7 @@ public class ModToolTiers {
             // tag for tier of tools that are added by the mod
             // tier is currently placed between diamond and netherite
             new ForgeTier(5, 1500, 8.0f, 3, 15,
-                    ModTags.Blocks.NEEDS_NUGGET_TOOL, () -> Ingredient.of(ModItems.NUGGET.get())),
+                    ModTags.Blocks.NEEDS_NUGGET_TOOL, () -> Ingredient.of(ModItems.NUGGET_ITEM.get())),
             new ResourceLocation(NsccMod.MOD_ID, "nugget"), List.of(Tiers.DIAMOND), List.of(Tiers.NETHERITE)
     );
 }
