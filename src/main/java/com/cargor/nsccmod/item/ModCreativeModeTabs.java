@@ -23,6 +23,13 @@ public class ModCreativeModeTabs {
                         // adding the blocks to the creative mode tab
                         pOutput.accept(ModBlocks.NUGGET_BLOCK.get());
                         pOutput.accept(ModBlocks.NUGGET_ORE_BLOCK.get());
+
+                        // adding tools to the creative mode tab
+                        pOutput.accept(ModItems.NUGGET_SWORD.get());
+                        pOutput.accept(ModItems.NUGGET_PICKAXE.get());
+                        pOutput.accept(ModItems.NUGGET_AXE.get());
+                        pOutput.accept(ModItems.NUGGET_SHOVEL.get());
+                        pOutput.accept(ModItems.NUGGET_HOE.get());
                     })
                     .build());
 
