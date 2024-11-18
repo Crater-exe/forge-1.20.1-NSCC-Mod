@@ -3,7 +3,6 @@ package com.cargor.nsccmod;
 import com.cargor.nsccmod.item.ModCreativeModeTabs;
 import com.cargor.nsccmod.item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -52,7 +51,7 @@ public class NsccMod
     {
         // adds Nugget from ModItems to the Food tab in creative mod
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.NUGGET);
+            event.accept(ModItems.NUGGET_ITEM);
         }
     }
 

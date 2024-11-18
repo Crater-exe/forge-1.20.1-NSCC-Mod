@@ -12,8 +12,8 @@ public class ModItems {
             // creates a long list of items that are registered when forge loads items
             DeferredRegister.create(ForgeRegistries.ITEMS, NsccMod.MOD_ID);
 
-    public static final RegistryObject<Item> NUGGET = ITEMS.register("nugget",
-            () -> new Item(new Item.Properties().food(ModFoods.NUGGET)));
+    public static final RegistryObject<Item> NUGGET_ITEM = ITEMS.register("nugget",
+            () -> new Item(new Item.Properties().food(ModFoods.NUGGET_FOOD)));
 
     public static void register(IEventBus eventBus) {
         // registers the registry
