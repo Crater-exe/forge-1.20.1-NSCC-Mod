@@ -54,7 +54,7 @@ public class NsccMod
     {
         // adds Nugget from ModItems to the Food tab in creative mod
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.NUGGET);
+            event.accept(ModItems.NUGGET_ITEM);
         }
     }
 

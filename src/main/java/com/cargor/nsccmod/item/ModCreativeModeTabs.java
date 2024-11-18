@@ -1,7 +1,6 @@
 package com.cargor.nsccmod.item;
 
 import com.cargor.nsccmod.NsccMod;
-import com.cargor.nsccmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,7 +17,13 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.NUGGET.get()))
                     .title(Component.translatable("creativetab.nscc_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.NUGGET.get());
+                        pOutput.accept(ModItems.NUGGET_ITEM.get());
+
+                        // adding armour to the creative mode tab
+                        pOutput.accept(ModItems.NUGGET_HELMET.get());
+                        pOutput.accept(ModItems.NUGGET_CHESTPLATE.get());
+                        pOutput.accept(ModItems.NUGGET_LEGGINGS.get());
+                        pOutput.accept(ModItems.NUGGET_BOOTS.get());
 
                         // adding the blocks to the creative mode tab
                         pOutput.accept(ModBlocks.NUGGET_BLOCK.get());

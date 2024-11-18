@@ -1,5 +1,9 @@
 {
   "item.nsccmod.nugget": "Nugget",
+  "item.nsccmod.nugget_helmet": "Nugget Helmet",
+  "item.nsccmod.nugget_chestplate": "Nugget Chestplate",
+  "item.nsccmod.nugget_leggings": "Nugget Leggings",
+  "item.nsccmod.nugget_boots": "Nugget Boots",
 
   "block.nsccmod.nugget_block": "Block of Nuggets",
 
