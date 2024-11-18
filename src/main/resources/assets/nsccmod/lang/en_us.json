@@ -5,5 +5,15 @@
 
   "block.nsccmod.nugget_ore_block": "Nuggetonium Ore",
 
+  "item.nsccmod.nugget_sword": "Nuggetonium Sword",
+
+  "item.nsccmod.nugget_pickaxe": "Nuggetonium Pickaxe",
+
+  "item.nsccmod.nugget_axe": "Nuggetonium Axe",
+
+  "item.nsccmod.nugget_hoe": "Nuggetonium Hoe",
+
+  "item.nsccmod.nugget_shovel": "Nuggetonium Shovel",
+
   "creativetab.nscc_tab": "NSCC Mod Tab"
 }

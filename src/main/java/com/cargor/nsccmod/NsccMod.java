@@ -4,7 +4,6 @@ import com.cargor.nsccmod.block.ModBlocks;
 import com.cargor.nsccmod.item.ModCreativeModeTabs;
 import com.cargor.nsccmod.item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +32,7 @@ public class NsccMod
         // registers ModItems and Creative mode tab
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        // registers blocks
         ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
