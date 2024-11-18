@@ -18,6 +18,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.nscc_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.NUGGET_ITEM.get());
+                        pOutput.accept(ModItems.NUGGET_HELMET.get());
+                        pOutput.accept(ModItems.NUGGET_CHESTPLATE.get());
+                        pOutput.accept(ModItems.NUGGET_LEGGINGS.get());
+                        pOutput.accept(ModItems.NUGGET_BOOTS.get());
                     })
                     .build());
 
