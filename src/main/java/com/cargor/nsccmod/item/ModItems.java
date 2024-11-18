@@ -1,6 +1,7 @@
 package com.cargor.nsccmod.item;
 
 import com.cargor.nsccmod.NsccMod;
+import com.cargor.nsccmod.item.custom.ModArmorItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,7 +18,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.NUGGET_FOOD)));
 
     public static final RegistryObject<ArmorItem> NUGGET_HELMET = ITEMS.register("nugget_helmet",
-            () -> new ArmorItem(ModArmorMaterials.NUGGET_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.NUGGET_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<ArmorItem> NUGGET_CHESTPLATE = ITEMS.register("nugget_chestplate",
             () -> new ArmorItem(ModArmorMaterials.NUGGET_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<ArmorItem> NUGGET_LEGGINGS = ITEMS.register("nugget_leggings",
