@@ -10,7 +10,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    NUGGET_MATERIAL("nugget", 26, new int[]{ 5, 7, 5, 4 }, 25,
+    NUGGET_MATERIAL("nugget", 26, new int[]{ 5, 7, 5, 4 }, 15,
                     SoundEvents.GENERIC_EAT, 1f, 0f,
                     () -> Ingredient.of(ModItems.NUGGET_ITEM.get()));
 
