@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:shaped_crafting",
+  "category": "misc",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "nsccmod:nugget"
+    }
+  },
+  "result": {
+    "item": "nsccmod:nugget_block"
+  }
+}
