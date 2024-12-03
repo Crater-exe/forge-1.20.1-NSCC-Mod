@@ -1,5 +1,5 @@
 {
-  "feature": "nsccmod:nugget_ore",
+  "feature": "nsccmod:nugget_ore_configured",
   "placement": [
     {
       "type": "minecraft:count",

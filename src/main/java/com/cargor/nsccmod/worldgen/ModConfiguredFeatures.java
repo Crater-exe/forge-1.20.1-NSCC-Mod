@@ -16,7 +16,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
 public class ModConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> NUGGET_ORE_KEY = registerKey("nugget_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NUGGET_ORE_KEY = registerKey("nugget_ore_configured");
 
     // creating bootstap context
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
